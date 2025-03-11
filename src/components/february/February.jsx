@@ -9,12 +9,17 @@ export default function February() {
     { uiProject: "/images/nextGenAstronaut.png", id: 5 },
     { uiProject: "/images/mesozoicMarvels.png", id: 6 },
     { uiProject: "/images/oneStopShop.png", id: 7 },
+    { uiProject: "/images/donuts.png", id: 8 },
   ];
 
   return (
     <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 ml-10 w-full">
       {februaryWork.map((work) => (
-        <Image key={work.id} image={work.uiProject} />
+        <Image
+          key={work.id}
+          image={work.uiProject}
+          alt={"Davonnes Coding UI Projects"}
+        />
       ))}
     </section>
   );
