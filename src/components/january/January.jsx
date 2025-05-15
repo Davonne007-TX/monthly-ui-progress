@@ -15,14 +15,16 @@ export default function January() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 w-full">
-      {myUIProjectsJanuary.map((project) => (
-        <Image
-          key={project.id}
-          image={project.UIproject}
-          alt={"Davonnes Coding UI Projects"}
-        />
-      ))}
+    <section className="mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
+        {myUIProjectsJanuary.map((project) => (
+          <Image
+            key={project.id}
+            image={project.UIproject}
+            alt={"Davonnes Coding UI Projects"}
+          />
+        ))}
+      </div>
     </section>
   );
 }

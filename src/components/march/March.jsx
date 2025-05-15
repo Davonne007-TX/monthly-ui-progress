@@ -11,7 +11,7 @@ export default function March() {
   ];
 
   return (
-    <section className="mt-10">
+    <section>
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
         {marchWork.map((work) => (
           <Image

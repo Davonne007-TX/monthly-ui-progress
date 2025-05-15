@@ -13,7 +13,7 @@ export default function February() {
   ];
 
   return (
-    <section className="mt-10">
+    <section>
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
         {februaryWork.map((work) => (
           <Image
