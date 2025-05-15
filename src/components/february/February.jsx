@@ -25,7 +25,7 @@ export default function February() {
         ))}
       </div>
       <KeepGoing
-        motivationTxt="¿Quieres más?"
+        motivationTxt="Learning"
         backgroundColor="bg-linear-65 from-white to-purple-600"
       />
     </section>

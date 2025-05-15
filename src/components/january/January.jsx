@@ -27,7 +27,7 @@ export default function January() {
         ))}
       </div>
       <KeepGoing
-        motivationTxt="Keep Going"
+        motivationTxt="Building"
         backgroundColor="bg-linear-65 from-white to-pink-400"
       />
     </section>
