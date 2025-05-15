@@ -1,4 +1,5 @@
 import Image from "../Image";
+import KeepGoing from "../KeepGoing";
 
 export default function April() {
   const aprilWork = [
@@ -19,6 +20,10 @@ export default function April() {
           />
         ))}
       </div>
+      <KeepGoing
+        motivationTxt="CREATING"
+        backgroundColor="bg-linear-65 from-white to-green-600"
+      />
     </section>
   );
 }

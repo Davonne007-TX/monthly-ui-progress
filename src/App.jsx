@@ -19,23 +19,11 @@ function App() {
     >
       <main className="bg-black min-h-screen flex flex-col justify-center items-center">
         <h1 className="font-press text-white text-2xl md:text-4xl text-center mt-6">
-          Davonne's UI Projects
+          Davonne's UI Projects 2025
         </h1>
         <January />
-        <KeepGoing
-          motivationTxt="Keep Going"
-          backgroundColor="bg-linear-65 from-white to-pink-400"
-        />
         <February />
-        <KeepGoing
-          motivationTxt="Quieres Mas"
-          backgroundColor="bg-linear-65 from-white to-purple-600"
-        />
         <March />
-        <KeepGoing
-          motivationTxt="CREATING"
-          backgroundColor="bg-linear-65 from-white to-green-600"
-        />
         <April />
         <May />
         <KeepGoing

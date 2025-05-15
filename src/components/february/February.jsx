@@ -1,4 +1,5 @@
 import Image from "../Image";
+import KeepGoing from "../KeepGoing";
 
 export default function February() {
   const februaryWork = [
@@ -23,6 +24,10 @@ export default function February() {
           />
         ))}
       </div>
+      <KeepGoing
+        motivationTxt="¿Quieres más?"
+        backgroundColor="bg-linear-65 from-white to-purple-600"
+      />
     </section>
   );
 }
