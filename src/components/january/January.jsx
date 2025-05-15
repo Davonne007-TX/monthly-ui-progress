@@ -1,5 +1,4 @@
 import Image from "../Image";
-import KeepGoing from "../KeepGoing";
 
 export default function January() {
   const myUIProjectsJanuary = [
@@ -26,10 +25,6 @@ export default function January() {
           />
         ))}
       </div>
-      <KeepGoing
-        motivationTxt="Building"
-        backgroundColor="bg-linear-65 from-white to-pink-400"
-      />
     </section>
   );
 }
