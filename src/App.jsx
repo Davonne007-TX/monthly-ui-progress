@@ -2,6 +2,7 @@ import "./App.css";
 import January from "./components/january/January";
 import KeepGoing from "./components/KeepGoing";
 import February from "./components/february/February";
+import March from "./components/march/March";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           motivationTxt="Quieres Mas"
           backgroundColor="bg-linear-65 from-white to-purple-600"
         />
+        <March />
       </main>
     </>
   );
