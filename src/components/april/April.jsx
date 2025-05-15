@@ -20,10 +20,6 @@ export default function April() {
           />
         ))}
       </div>
-      <KeepGoing
-        motivationTxt="CREATING"
-        backgroundColor="bg-linear-65 from-white to-green-600"
-      />
     </section>
   );
 }
