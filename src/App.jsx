@@ -33,11 +33,12 @@ function App() {
           backgroundColor="bg-linear-65 from-white to-purple-600"
         />
         <March />
+
+        <April />
         <KeepGoing
           motivationTxt="CREATING"
-          backgroundColor="bg-linear-65 from-white to-green-600"
+          backgroundColor="bg-linear-65 from-white to-green-500"
         />
-        <April />
         <May />
         <KeepGoing
           motivationTxt="Thank You For Visiting"
