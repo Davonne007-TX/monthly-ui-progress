@@ -13,14 +13,16 @@ export default function February() {
   ];
 
   return (
-    <section className="mt-10 grid grid-cols-1 md:grid-cols-2 w-full">
-      {februaryWork.map((work) => (
-        <Image
-          key={work.id}
-          image={work.uiProject}
-          alt={"Davonnes Coding UI Projects"}
-        />
-      ))}
+    <section className="mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
+        {februaryWork.map((work) => (
+          <Image
+            key={work.id}
+            image={work.uiProject}
+            alt={"Davonnes Coding UI Projects"}
+          />
+        ))}
+      </div>
     </section>
   );
 }

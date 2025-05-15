@@ -8,8 +8,15 @@ function App() {
     <>
       <main className="bg-black min-h-screen flex flex-col justify-center items-center">
         <January />
-        <KeepGoing />
+        <KeepGoing
+          motivationTxt="Keep Going"
+          backgroundColor="bg-linear-65 from-white to-pink-400"
+        />
         <February />
+        <KeepGoing
+          motivationTxt="Quieres Mas"
+          backgroundColor="bg-linear-65 from-white to-purple-600"
+        />
       </main>
     </>
   );

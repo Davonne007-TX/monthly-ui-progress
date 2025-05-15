@@ -1,8 +1,10 @@
-export default function KeepGoing() {
+export default function KeepGoing({ backgroundColor, motivationTxt }) {
   return (
-    <section className="bg-neutral-200 font-press flex justify-center items-center w-full p-4 mt-20">
-      <h1 className="text-5xl md:text-6xl font-press text-center text-black">
-        Keep Going
+    <section
+      className={`${backgroundColor} font-press flex justify-center items-center w-full py-4 `}
+    >
+      <h1 className="text-3xl md:text-6xl font-press text-center text-black">
+        {motivationTxt}
       </h1>
     </section>
   );
