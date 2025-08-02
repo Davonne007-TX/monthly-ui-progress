@@ -1,4 +1,4 @@
-import Image from "../Image";
+import Image from "./Image";
 
 export default function February() {
   const mayWork = [
