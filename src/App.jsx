@@ -1,13 +1,13 @@
 import "./App.css";
 import React, { Suspense } from "react";
 
-const January = React.lazy(() => import("./components/january/January"));
+const January = React.lazy(() => import("./components/January"));
 const KeepGoing = React.lazy(() => import("./components/KeepGoing"));
-const February = React.lazy(() => import("./components/february/February"));
-const March = React.lazy(() => import("./components/march/March"));
-const April = React.lazy(() => import("./components/april/April"));
-const May = React.lazy(() => import("./components/may/May"));
-const July = React.lazy(() => import("./components/july/July"));
+const February = React.lazy(() => import("./components/February"));
+const March = React.lazy(() => import("./components/March"));
+const April = React.lazy(() => import("./components/April"));
+const May = React.lazy(() => import("./components/May"));
+const July = React.lazy(() => import("./components/July"));
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
     >
       <main className="bg-black min-h-screen flex flex-col justify-center items-center">
         <h1 className="font-press text-white text-2xl md:text-4xl text-center mt-6">
-          Davonne's UI Projects
+          Davonne's 2025 UI Projects
         </h1>
         <January />
         <KeepGoing
@@ -42,7 +42,7 @@ function App() {
         />
         <May />
         <KeepGoing
-          motivationTxt="LETS GO"
+          motivationTxt="GROWING"
           backgroundColor="bg-linear-65 from-white to-green-500"
         />
         <July />

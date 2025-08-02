@@ -1,5 +1,4 @@
-import Image from "../Image";
-import KeepGoing from "../KeepGoing";
+import Image from "./Image";
 
 export default function April() {
   const aprilWork = [
