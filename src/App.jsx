@@ -7,6 +7,7 @@ const February = React.lazy(() => import("./components/february/February"));
 const March = React.lazy(() => import("./components/march/March"));
 const April = React.lazy(() => import("./components/april/April"));
 const May = React.lazy(() => import("./components/may/May"));
+const July = React.lazy(() => import("./components/july/July"));
 
 function App() {
   return (
@@ -37,12 +38,17 @@ function App() {
         <April />
         <KeepGoing
           motivationTxt="CREATING"
-          backgroundColor="bg-linear-65 from-white to-green-500"
+          backgroundColor="bg-linear-65 from-white to-blue-500"
         />
         <May />
         <KeepGoing
+          motivationTxt="LETS GO"
+          backgroundColor="bg-linear-65 from-white to-green-500"
+        />
+        <July />
+        <KeepGoing
           motivationTxt="Thank You For Visiting"
-          backgroundColor="bg-linear-65 from-white to-blue-500"
+          backgroundColor="bg-linear-65 from-white to-pink-600"
         />
       </main>
     </Suspense>
