@@ -5,6 +5,7 @@ export default function July() {
     { image: "/images/goBig.png", id: 1 },
     { image: "/images/developerCard.png", id: 2 },
     { image: "/images/calmPaws.png", id: 3 },
+    { image: "./images/cheeseThis.png", id: 4 },
   ];
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 w-full">
@@ -18,3 +19,5 @@ export default function July() {
     </section>
   );
 }
+
+//1 project built in August to make it even ..! Till if there are more Projects
