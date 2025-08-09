@@ -14,11 +14,11 @@ Deployed Project: https://dev-by-design.vercel.app/
 
 Want to check it out on your computer? Here’s how 🚀 :
 
-1. Go to folder of your choice where you would like to clone this. Open the folder in VS Code. Go to terminal and clone the repository
+1. Go to folder of your choice where you would like to clone this. Open the folder in VS Code. Go to terminal and clone the repository.
 
-git clone git@github.com:Davonne007-TX/monthly-ui-progress.git
+   git clone git@github.com:Davonne007-TX/monthly-ui-progress.git
 
-2.  List the files to confirm the project is there
+2. List the files to confirm the project is there
 
 ls
 
@@ -36,6 +36,6 @@ npm run dev
 
 6. Open the app in your browser
 
-# (The port may vary depending on your setup)
+(The port may vary depending on your setup)
 
 http://localhost:5173
