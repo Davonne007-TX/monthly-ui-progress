@@ -20,22 +20,22 @@ Want to check it out on your computer? Here’s how 🚀 :
 
 2. List the files to confirm the project is there
 
-ls
+   ls
 
 3. Navigate into the project folder
 
-cd collection
+   cd collection
 
 4. Install dependencies
 
-npm install
+   npm install
 
 5. Start the development server
 
-npm run dev
+   npm run dev
 
 6. Open the app in your browser
 
-(The port may vary depending on your setup)
+   (The port may vary depending on your setup)
 
-http://localhost:5173
+   http://localhost:5173
