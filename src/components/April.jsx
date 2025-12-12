@@ -5,7 +5,7 @@ export default function April() {
     { uiProject: "/images/theFunkyTaco.png", id: 1 },
     { uiProject: "/images/springCamp.png", id: 2 },
     { uiProject: "/images/stayAlert.png", id: 3 },
-    { uiProject: "/images/habitQuest.png", id: 4 },
+    { uiProject: "/images/habitQuest.webp", id: 4 },
   ];
 
   return (

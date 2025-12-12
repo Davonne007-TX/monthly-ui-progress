@@ -2,7 +2,7 @@ import Image from "./Image";
 
 export default function February() {
   const mayWork = [
-    { uiProject: "/images/backTour.jpg", id: 1 },
+    { uiProject: "/images/backTour.webp", id: 1 },
     { uiProject: "/images/tournament.png", id: 2 },
     { uiProject: "/images/takinItBack.png", id: 3 },
     { uiProject: "/images/summerVibes.png", id: 4 },

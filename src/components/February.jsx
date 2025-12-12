@@ -2,14 +2,14 @@ import Image from "./Image";
 
 export default function February() {
   const februaryWork = [
-    { uiProject: "/images/cosmos.png", id: 1 },
-    { uiProject: "/images/foreverDiamonds.png", id: 2 },
-    { uiProject: "/images/ironFistKarate.png", id: 3 },
-    { uiProject: "/images/ironFistKarate2.png", id: 4 },
-    { uiProject: "/images/nextGenAstronaut.png", id: 5 },
-    { uiProject: "/images/mesozoicMarvels.png", id: 6 },
-    { uiProject: "/images/oneStopShop.png", id: 7 },
-    { uiProject: "/images/donuts.png", id: 8 },
+    { uiProject: "/images/cosmos.webp", id: 1 },
+    { uiProject: "/images/foreverDiamonds.webp", id: 2 },
+    { uiProject: "/images/ironFistKarate.webp", id: 3 },
+    { uiProject: "/images/ironFistKarate2.webp", id: 4 },
+    { uiProject: "/images/nextGenAstronaut.webp", id: 5 },
+    { uiProject: "/images/mesozoicMarvels.webp", id: 6 },
+    { uiProject: "/images/oneStopShop.webp", id: 7 },
+    { uiProject: "/images/donuts.webp", id: 8 },
   ];
 
   return (
