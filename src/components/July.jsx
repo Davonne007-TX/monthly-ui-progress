@@ -8,16 +8,16 @@ export default function July() {
     { image: "./images/cheeseThis.webp", id: 4 },
   ];
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 w-full">
-      {projects.map((project) => (
-        <Image
-          key={project.id}
-          image={project.image}
-          alt={"Davonnes Coding UI Projects"}
-        />
-      ))}
+    <section>
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
+        {projects.map((work) => (
+          <Image
+            key={work.id}
+            image={work.image}
+            alt={"Davonnes Coding UI Projects"}
+          />
+        ))}
+      </div>
     </section>
   );
 }
-
-//1 project built in August to make it even ..! Till if there are more Projects

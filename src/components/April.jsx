@@ -2,9 +2,9 @@ import Image from "./Image";
 
 export default function April() {
   const aprilWork = [
-    { uiProject: "/images/theFunkyTaco.png", id: 1 },
-    { uiProject: "/images/springCamp.png", id: 2 },
-    { uiProject: "/images/stayAlert.png", id: 3 },
+    { uiProject: "/images/theFunkyTaco.webp", id: 1 },
+    { uiProject: "/images/springCamp.webp", id: 2 },
+    { uiProject: "/images/stayAlert.webp", id: 3 },
     { uiProject: "/images/habitQuest.webp", id: 4 },
   ];
 

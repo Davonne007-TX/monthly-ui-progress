@@ -3,10 +3,10 @@ import Image from "./Image";
 export default function March() {
   const marchWork = [
     { uiProject: "/images/blast2ThePast.webp", id: 1 },
-    { uiProject: "/images/thePursuit.png", id: 2 },
-    { uiProject: "/images/shamrockTavern.png", id: 3 },
-    { uiProject: "/images/rForce.png", id: 4 },
-    { uiProject: "/images/ventanasXP.png", id: 5 },
+    { uiProject: "/images/thePursuit.webp", id: 2 },
+    { uiProject: "/images/shamrockTavern.webp", id: 3 },
+    { uiProject: "/images/rForce.webp", id: 4 },
+    { uiProject: "/images/ventanasXP.webp", id: 5 },
     { uiProject: "/images/eatNow.webp", id: 6 },
   ];
 

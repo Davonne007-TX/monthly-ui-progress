@@ -19,7 +19,7 @@ function App() {
       }
     >
       <main className="bg-black min-h-screen flex flex-col justify-center items-center">
-        <h1 className="font-right text-white text-2xl md:text-4xl text-center mt-6">
+        <h1 className="font-right text-white text-2xl md:text-5xl text-center mt-6">
           Davonne's 2025 UI React Projects
         </h1>
         <January />
