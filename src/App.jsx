@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { Suspense } from "react";
+import EndOdTheYear from "./components/EndOfTheYear";
 
 const January = React.lazy(() => import("./components/January"));
 const KeepGoing = React.lazy(() => import("./components/KeepGoing"));
@@ -30,22 +31,20 @@ function App() {
 
         <February />
         <KeepGoing
-          motivationTxt="LEARNING"
+          motivationTxt="GROWING"
           backgroundColor="bg-linear-65 from-white to-purple-600"
         />
         <March />
-
         <April />
-        <KeepGoing
-          motivationTxt="CREATING"
-          backgroundColor="bg-linear-65 from-white to-blue-500"
-        />
+
         <May />
         <KeepGoing
-          motivationTxt="GROWING"
-          backgroundColor="bg-linear-65 from-white to-green-500"
+          motivationTxt="Finishing Strong"
+          backgroundColor="bg-linear-65 from-white to-green-600"
         />
         <July />
+
+        <EndOdTheYear />
         <KeepGoing
           motivationTxt="Thank You For Visiting"
           backgroundColor="bg-linear-65 from-white to-pink-600"
