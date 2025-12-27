@@ -27,7 +27,7 @@ function App() {
   if (!isReady) {
     return (
       <div className="w-full min-h-screen flex items-center justify-center bg-black">
-        <span className="text-white text-xl font-press tracking-wide">
+        <span className="text-white text-3xl font-press tracking-wide">
           Loading Projects…
         </span>
       </div>
