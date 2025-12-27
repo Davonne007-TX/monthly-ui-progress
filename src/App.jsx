@@ -1,14 +1,12 @@
 import "./App.css";
 import React, { Suspense } from "react";
-import EndOdTheYear from "./components/EndOfTheYear";
 
 const January = React.lazy(() => import("./components/January"));
 const KeepGoing = React.lazy(() => import("./components/KeepGoing"));
 const February = React.lazy(() => import("./components/February"));
-const March = React.lazy(() => import("./components/March"));
-const April = React.lazy(() => import("./components/April"));
-const May = React.lazy(() => import("./components/May"));
+const Spring = React.lazy(() => import("./components/Spring"));
 const July = React.lazy(() => import("./components/July"));
+const EndOdTheYear = React.lazy(() => import("./components/EndOfTheYear"));
 
 function App() {
   return (
@@ -35,10 +33,7 @@ function App() {
           motivationTxt="GROWING"
           backgroundColor="bg-linear-65 from-white to-purple-600"
         />
-        <March />
-        <April />
-
-        <May />
+        <Spring />
         <KeepGoing
           motivationTxt="Finishing Strong"
           backgroundColor="bg-linear-65 from-white to-green-600"
