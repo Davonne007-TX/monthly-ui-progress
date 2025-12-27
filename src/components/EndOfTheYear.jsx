@@ -7,6 +7,7 @@ export default function EndOdTheYear() {
     { uiProject: "/images/silkySmooth.webp", id: 3 },
     { uiProject: "/images/skateOff.webp", id: 4 },
     { uiProject: "/images/theSpot.webp", id: 5 },
+    { uiProject: "/images/wonkru.webp", id: 6 },
   ];
 
   return (

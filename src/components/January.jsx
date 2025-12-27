@@ -15,7 +15,7 @@ export default function January() {
   ];
 
   return (
-    <section className="mt-8">
+    <section className="mt-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
         {myUIProjectsJanuary.map((project) => (
           <Image
