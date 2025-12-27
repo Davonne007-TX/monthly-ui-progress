@@ -1,4 +1,9 @@
-export default function KeepGoing({ backgroundColor, motivationTxt }) {
+export default function KeepGoing({
+  backgroundColor,
+  href,
+  ourLink,
+  motivationTxt,
+}) {
   return (
     <section
       className={`${backgroundColor} flex flex-col gap-2 justify-center items-center w-full py-4 mx-4 animate-fadeIn`}
@@ -7,10 +12,10 @@ export default function KeepGoing({ backgroundColor, motivationTxt }) {
         {motivationTxt}
       </h2>
       <a
-        href="https://davonnessite.vercel.app/"
+        href={href}
         className="font-mono hover:scale-105 text-lg text-center md:text-xl"
       >
-        Wanna learn more? Check out my portfolio
+        {ourLink}
       </a>
     </section>
   );

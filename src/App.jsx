@@ -27,7 +27,7 @@ function App() {
   if (!isReady) {
     return (
       <div className="w-full min-h-screen flex items-center justify-center bg-black">
-        <span className="text-white text-3xl font-press tracking-wide">
+        <span className="text-white text-3xl text-center font-press tracking-wide">
           Loading Projects…
         </span>
       </div>
@@ -78,6 +78,8 @@ function App() {
       <KeepGoing
         motivationTxt="Thank You For Visiting"
         backgroundColor="bg-gradient-to-br from-white to-pink-600"
+        href="https://davonnessite.vercel.app/"
+        ourLink="Wanna learn more? Check out my portfolio"
       />
     </main>
   );
