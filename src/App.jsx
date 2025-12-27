@@ -1,52 +1,85 @@
 import "./App.css";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 const January = React.lazy(() => import("./components/January"));
-const KeepGoing = React.lazy(() => import("./components/KeepGoing"));
+import KeepGoing from "./components/KeepGoing";
 const February = React.lazy(() => import("./components/February"));
 const Spring = React.lazy(() => import("./components/Spring"));
 const July = React.lazy(() => import("./components/July"));
-const EndOdTheYear = React.lazy(() => import("./components/EndOfTheYear"));
+const EndOfTheYear = React.lazy(() => import("./components/EndOfTheYear"));
+function LoadingMagic() {
+  return (
+    <div className="w-full min-h-screen flex items-center justify-center bg-black ">
+      <span className="text-white font-press text-3xl tracking-widen">...</span>
+    </div>
+  );
+}
 
 function App() {
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsReady(true), 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isReady) {
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center bg-black">
+        <span className="text-white text-3xl font-press tracking-wide">
+          Loading Projects…
+        </span>
+      </div>
+    );
+  }
+
   return (
-    <Suspense
-      fallback={
-        <div className="text-white bg-black min-h-screen flex-col justify-center items-center font-bold text-4xl">
-          Loading...
-        </div>
-      }
-    >
-      <main className="bg-black min-h-screen flex flex-col justify-center items-center">
-        <h1 className="font-right text-white text-2xl md:text-5xl text-center mt-6">
-          Davonne's 2025 <br />
-          UI React & Tailwind CSS Projects
-        </h1>
+    <main className="bg-black min-h-screen flex flex-col justify-center items-center">
+      <h1 className="font-right text-white text-2xl md:text-5xl text-center mt-6">
+        Davonne's 2025 <br />
+        UI React & Tailwind CSS Projects
+      </h1>
+      <Suspense fallback={<LoadingMagic />}>
         <January />
-        <KeepGoing
-          motivationTxt="BUILDING"
-          backgroundColor="bg-linear-65 from-white to-pink-300"
-        />
+      </Suspense>
 
+      <KeepGoing
+        motivationTxt="BUILDING"
+        backgroundColor=" bg-gradient-to-br from-white to-pink-300"
+      />
+
+      <Suspense fallback={<LoadingMagic />}>
         <February />
-        <KeepGoing
-          motivationTxt="GROWING"
-          backgroundColor="bg-linear-65 from-white to-purple-600"
-        />
-        <Spring />
-        <KeepGoing
-          motivationTxt="Finishing Strong"
-          backgroundColor="bg-linear-65 from-white to-green-600"
-        />
-        <July />
+      </Suspense>
 
-        <EndOdTheYear />
-        <KeepGoing
-          motivationTxt="Thank You For Visiting"
-          backgroundColor="bg-linear-65 from-white to-pink-600"
-        />
-      </main>
-    </Suspense>
+      <KeepGoing
+        motivationTxt="GROWING"
+        backgroundColor=" bg-gradient-to-br from-white to-purple-600"
+      />
+
+      <Suspense fallback={<LoadingMagic />}>
+        <Spring />
+      </Suspense>
+
+      <KeepGoing
+        motivationTxt="Finishing Strong"
+        backgroundColor=" bg-gradient-to-br from-white to-green-600"
+      />
+
+      <Suspense fallback={<LoadingMagic />}>
+        <July />
+      </Suspense>
+
+      <Suspense fallback={<LoadingMagic />}>
+        <EndOfTheYear />
+      </Suspense>
+
+      <KeepGoing
+        motivationTxt="Thank You For Visiting"
+        backgroundColor="bg-gradient-to-br from-white to-pink-600"
+      />
+    </main>
   );
 }
 
