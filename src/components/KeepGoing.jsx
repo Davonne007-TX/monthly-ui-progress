@@ -1,7 +1,9 @@
+import { motion } from "motion/react";
+
 export default function KeepGoing({
   backgroundColor,
-  href,
-  ourLink,
+  // href,
+  // ourLink,
   motivationTxt,
 }) {
   return (
@@ -11,12 +13,16 @@ export default function KeepGoing({
       <h2 className="text-3xl md:text-6xl font-right text-center text-black">
         {motivationTxt}
       </h2>
-      <a
-        href={href}
-        className="font-mono hover:scale-105 text-lg text-center md:text-xl"
+
+      <motion.a
+        href="https://lets-code-it.vercel.app/"
+        className="font-mono text-lg text-center md:text-xl"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
       >
-        {ourLink}
-      </a>
+        For more information about me, check out my portfolio!
+      </motion.a>
     </section>
   );
 }

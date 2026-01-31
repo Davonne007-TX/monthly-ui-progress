@@ -36,8 +36,8 @@ function App() {
 
   return (
     <main className="bg-black min-h-screen flex flex-col justify-center items-center">
-      <h1 className="font-right text-white text-2xl md:text-5xl text-center mt-6">
-        Davonne's 2025 <br />
+      <h1 className="font-right text-white text-2xl md:text-5xl text-center mt-8">
+        Davonne's <span className=" text-pink-400"> 2025</span> <br /> <br />
         UI React & Tailwind CSS Projects
       </h1>
       <Suspense fallback={<LoadingMagic />}>
@@ -78,8 +78,8 @@ function App() {
       <KeepGoing
         motivationTxt="Thank You For Visiting"
         backgroundColor="bg-gradient-to-br from-white to-pink-600"
-        href="https://davonnessite.vercel.app/"
-        ourLink="Wanna learn more? Check out my portfolio"
+        // href="https://lets-code-it.vercel.app/"
+        // ourLink="Wanna learn more? Check out my portfolio"
       />
     </main>
   );
